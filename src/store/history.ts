@@ -19,12 +19,12 @@ export type HistoryMetrics = {
 export type HistoryLog = { ts: number; type: string | null; payload: string | null }
 export type HistoryRange = { min: number | null; max: number | null; count: number }
 
-// Collector base URL. In dev, '/collector' is proxied by vite (see vite.config.ts).
-// In production, point this at the collector's HTTP address.
-export const collectorBaseUrl = useStorage<string>(
-  'history/collector-base-url',
-  import.meta.env.DEV ? '/collector' : 'http://127.0.0.1:8788',
-)
+// Collector base URL. Defaults to the relative path '/collector', which works
+// for both dev (proxied by vite, see vite.config.ts) and the recommended
+// production setup (served behind the same origin via a reverse proxy, e.g.
+// nginx `location /collector/`). Override it in the History page input only if
+// the collector lives on a different origin.
+export const collectorBaseUrl = useStorage<string>('history/collector-base-url', '/collector')
 
 // Selected look-back window in milliseconds (default: last 1 hour).
 export const rangeMs = useStorage<number>('history/range-ms', 60 * 60 * 1000)
