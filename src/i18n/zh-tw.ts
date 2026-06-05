@@ -8,6 +8,7 @@ const zhTW: LANG_MESSAGE = {
   rules: '規則',
   connections: '連接',
   logs: '日誌',
+  history: '歷史',
 
   // Shared labels and actions
   protocol: '協議',
@@ -376,6 +377,20 @@ const zhTW: LANG_MESSAGE = {
   folder_preview: '自動匹配的代理組',
   folder_no_matches: '沒有符合的代理組',
   folder_delete_confirm: '確認刪除資料夾「{name}」？',
+
+  // History (archived monitoring)
+  historyTitle: '歷史監控回看',
+  historyRange30m: '最近 30 分鐘',
+  historyRange1h: '最近 1 小時',
+  historyRange2h: '最近 2 小時',
+  historySpeed: '速度',
+  historyMemory: '記憶體',
+  historyConnections: '連接數',
+  historyLogs: '日誌',
+  historyCollectorUnreachable: '無法連接採集服務，請確認它正在執行，且下方位址正確。',
+  historyCollectorAddress: '採集服務位址',
+  historyNoData: '該時間範圍內還沒有存檔資料。',
+  historyDataRange: '存檔範圍：{from} ~ {to}',
 }
 
 export default zhTW

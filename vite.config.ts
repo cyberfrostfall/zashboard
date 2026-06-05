@@ -73,4 +73,15 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
+  server: {
+    proxy: {
+      // History page: proxy to the standalone collector service in dev so
+      // the browser avoids cross-origin requests. See /collector.
+      '/collector': {
+        target: 'http://127.0.0.1:8788',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/collector/, ''),
+      },
+    },
+  },
 })

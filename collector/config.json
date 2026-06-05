@@ -1,0 +1,15 @@
+{
+  "backend": {
+    "protocol": "http",
+    "host": "127.0.0.1",
+    "port": "9090",
+    "secondaryPath": "",
+    "password": ""
+  },
+  "retentionMs": 7200000,
+  "port": 8788,
+  "bindHost": "127.0.0.1",
+  "dbPath": "./data/metrics.db",
+  "logRetentionMs": 7200000,
+  "maxLogsPerSecond": 50
+}

@@ -6,6 +6,7 @@ const en = {
   rules: 'Rules',
   connections: 'Connections',
   logs: 'Logs',
+  history: 'History',
 
   // Shared labels and actions
   protocol: 'Protocol',
@@ -383,6 +384,21 @@ const en = {
   folder_preview: 'Auto-matched groups',
   folder_no_matches: 'No matched groups',
   folder_delete_confirm: 'Delete folder "{name}"?',
+
+  // History (archived monitoring)
+  historyTitle: 'History Monitoring',
+  historyRange30m: 'Last 30 min',
+  historyRange1h: 'Last 1 hour',
+  historyRange2h: 'Last 2 hours',
+  historySpeed: 'Speed',
+  historyMemory: 'Memory',
+  historyConnections: 'Connections',
+  historyLogs: 'Logs',
+  historyCollectorUnreachable:
+    'Cannot reach the collector service. Make sure it is running and the address below is correct.',
+  historyCollectorAddress: 'Collector address',
+  historyNoData: 'No archived data in this time range yet.',
+  historyDataRange: 'Archived range: {from} ~ {to}',
 }
 
 export type LANG_MESSAGE = typeof en

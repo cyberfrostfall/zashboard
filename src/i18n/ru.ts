@@ -8,6 +8,7 @@ const ru: LANG_MESSAGE = {
   rules: 'Правила',
   connections: 'Подключения',
   logs: 'Журнал',
+  history: 'История',
 
   // Shared labels and actions
   protocol: 'Протокол',
@@ -385,6 +386,21 @@ const ru: LANG_MESSAGE = {
   folder_preview: 'Автоматически подобранные группы',
   folder_no_matches: 'Нет подходящих групп',
   folder_delete_confirm: 'Удалить папку «{name}»?',
+
+  // History (archived monitoring)
+  historyTitle: 'История мониторинга',
+  historyRange30m: 'Последние 30 мин',
+  historyRange1h: 'Последний 1 час',
+  historyRange2h: 'Последние 2 часа',
+  historySpeed: 'Скорость',
+  historyMemory: 'Память',
+  historyConnections: 'Подключения',
+  historyLogs: 'Журнал',
+  historyCollectorUnreachable:
+    'Не удаётся подключиться к сервису сбора. Убедитесь, что он запущен и адрес ниже верный.',
+  historyCollectorAddress: 'Адрес сервиса сбора',
+  historyNoData: 'В этом диапазоне времени ещё нет архивных данных.',
+  historyDataRange: 'Архивный диапазон: {from} ~ {to}',
 }
 
 export default ru

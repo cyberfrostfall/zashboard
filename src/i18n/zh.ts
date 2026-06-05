@@ -8,6 +8,7 @@ const zh: LANG_MESSAGE = {
   rules: '规则',
   connections: '连接',
   logs: '日志',
+  history: '历史',
 
   // Shared labels and actions
   protocol: '协议',
@@ -376,6 +377,20 @@ const zh: LANG_MESSAGE = {
   folder_preview: '自动匹配的代理组',
   folder_no_matches: '没有匹配的代理组',
   folder_delete_confirm: '确认删除文件夹「{name}」？',
+
+  // History (archived monitoring)
+  historyTitle: '历史监控回看',
+  historyRange30m: '最近 30 分钟',
+  historyRange1h: '最近 1 小时',
+  historyRange2h: '最近 2 小时',
+  historySpeed: '速度',
+  historyMemory: '内存',
+  historyConnections: '连接数',
+  historyLogs: '日志',
+  historyCollectorUnreachable: '无法连接采集服务，请确认它正在运行，且下方地址正确。',
+  historyCollectorAddress: '采集服务地址',
+  historyNoData: '该时间范围内还没有存档数据。',
+  historyDataRange: '存档范围：{from} ~ {to}',
 }
 
 export default zh
